@@ -9,8 +9,8 @@ COPY entrypoint.sh /
 # VOLUME ./data /mosquitto/data
 # VOLUME ./log /mosquitto/log
 
-EXPOSE 1883
 EXPOSE 9001
+EXPOSE 1883
 
 ENTRYPOINT ["sh", "./entrypoint.sh"]
 CMD ["/usr/sbin/mosquitto", "-c", "/mosquitto/config/mosquitto.conf"]
