@@ -6,8 +6,8 @@ ENV MOSQUITTO_PASSWORD=mqtt
 COPY mosquitto.conf /mosquitto/config/mosquitto.conf
 COPY entrypoint.sh /
 
-# VOLUME ./data /mosquitto/data
-# VOLUME ./log /mosquitto/log
+VOLUME ./data /mosquitto/data
+VOLUME ./log /mosquitto/log
 
 EXPOSE 9001
 EXPOSE 1883
