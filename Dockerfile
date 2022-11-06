@@ -1,7 +1,7 @@
 FROM eclipse-mosquitto:latest
 
 ENV MOSQUITTO_USERNAME=mqtt
-ENV MOSQUITTO_PASSWORD=mqtt
+ENV MOSQUITTO_PASSWORD=mqtt123
 
 COPY mosquitto.conf /mosquitto/config/mosquitto.conf
 COPY entrypoint.sh /
